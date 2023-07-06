@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+body{
+    background-image: linear-gradient(to right, rgba(179, 209, 255, 0.737),rgba(232, 232, 232, 0.934));
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.navbar{
+     height: 125px;
+     width: 100%;
+     background: transparent;
+     background-position: center;
+}    
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 7%;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    background: transparent;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: rgb(16,16,16);
+    font-family: Lustia;
+    font-size: 20px;
+    font-weight: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
