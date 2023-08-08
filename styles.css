@@ -22,11 +22,12 @@ main{
   /* min-height: 100vh; */
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom:32px;
 }
 
 .domain{
-  padding-top: 64px;
-  padding-bottom:32px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .clickable{
@@ -78,8 +79,14 @@ p{
 }
 
 .projects{
-  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
+
+.blogs{
+  margin-bottom: 6rem;
+}
+
+
 
 .projects-title{
   color:#121212;
@@ -127,6 +134,45 @@ h2{
   margin:0;
   font-family: "DM Sans", sans-serif;
   padding: 0;
+}
+
+.content > h3{
+  margin:0;
+  padding:0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #121212;
+}
+
+.content > p{
+  margin: 0;
+  padding:0;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 16px;
+  margin-top:-8px;
+}
+
+.blog{
+  border-top: solid 0.125rem #121212;
+  padding: 14px 0;
+}
+
+.blogs:last-child{
+  border-bottom: solid 0.125rem #121212;
+}
+
+
+
+
+.all-blogs > a{
+  text-decoration: none;
+  color: #1f1e1e;
+}
+
+.blog:hover{
+  background-color: rgb(230, 230, 230);
 }
 
 .title-line > h3{
@@ -179,8 +225,15 @@ h2{
 }
 
 .all-frames > a:hover{
-  border-radius: 16px;
-  animation: shadow-drop-center 0.15s linear both} @keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(141, 141, 141, 0.55)};
+  animation:shadow-pop-bottom-right 0.1s linear both} @keyframes shadow-pop-bottom-right{0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:1px 1px #3e3e3e,2px 2px #3e3e3e,3px 3px #3e3e3e,4px 4px #3e3e3e,5px 5px #3e3e3e;transform:translateX(-5px) translateY(-5px)}
+}
+
+.blog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap:16px;
 }
 
 
@@ -198,4 +251,195 @@ navbar > p {
 navbar > a{
   text-decoration: none;
   color: #666666;
+}
+
+.section-form{
+  border-top: solid 0.125rem #121212;
+  background-color: #e9e9e9;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom:20px;
+  margin:0;
+  border-bottom: solid 0.125rem #121212;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  width: 100%;
+  padding: 16px 16px 0px 16px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+form > input{
+  padding: 8px;
+  border:none;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 16px;
+  font-style: normal;
+
+}
+
+form > input:focus{
+  background-color: #f5f5f5;
+  
+}
+
+form > h2, form > p{
+  margin:0;
+  padding:0;
+}
+
+.submit > textarea{
+  padding: 8px;
+  border:none;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 16px;
+  font-style: normal;
+  resize: none;
+  height: 100px;
+}
+
+.submit > button{
+  padding: 8px;
+  border-radius: 4px;
+  border:none;
+  outline: none;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 16px;
+  font-style: normal;
+  background-color: #121212;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.submit{
+  display: flex;
+  flex-direction: row;
+  gap:16px
+}
+
+.submit > textarea{
+  width: 100%;
+}
+
+.read{
+  overflow: hidden; 
+  white-space: nowrap;
+}
+
+/* .section {
+  height: 100vh;
+} */
+
+
+.submit-page > h1, .submit-page > p, .first-contacts > section > a, .second-contacts > section > a{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+
+.submit-page > p, .first-contacts, .second-contacts{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.first-contacts > section, .second-contacts > section{
+  display:flex;
+  flex-direction: row;
+  gap:30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts{
+  margin-top: 42px;
+}
+
+
+.submit-page > h1{
+  margin-top:42px;
+  margin-bottom:12px;
+}
+
+.submit-page{
+  max-width: 600px;
+}
+
+.first-contacts > section, .second-contacts > section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts > h3{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #121212;
+  font-family: "DM Sans", sans-serif;
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  gap:16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer{
+  margin:0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: normal;
+  max-width: 650px;
+  padding: 16px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.profile{
+  width: 10em;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: solid 0.4rem #121212;
+  border-radius: 0.2rem;
+}
+
+.contact-section > div > a{
+  text-decoration: none;
+  color: #666666;
+  text-decoration: underline;
+}
+
+
+.contact-section > div > a:hover{
+  color: #121212;
+}
+
+.contact-section > div > p{
+  margin:0;
+  padding:0;
+}
+
+@media only screen and (max-width: 815px) {
+  .socials{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .domain{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+
 }
