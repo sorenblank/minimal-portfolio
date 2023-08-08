@@ -199,3 +199,12 @@ navbar > a{
   text-decoration: none;
   color: #666666;
 }
+
+.section {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.section::-webkit-scrollbar {
+  display: none;
+}
