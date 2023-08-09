@@ -319,6 +319,10 @@ form > h2, form > p{
   cursor: pointer;
 }
 
+form > a { 
+  text-decoration: none;
+}
+
 .submit{
   display: flex;
   flex-direction: row;
@@ -358,7 +362,7 @@ form > h2, form > p{
 }
 
 .contacts{
-  margin-top: 42px;
+  margin-top: 8px;
 }
 
 
@@ -368,7 +372,7 @@ form > h2, form > p{
 }
 
 .submit-page{
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .first-contacts > section, .second-contacts > section{
@@ -430,6 +434,23 @@ footer{
   padding:0;
 }
 
+.anchor{
+  text-decoration: none;
+  color: #252525;
+
+  
+}
+
+.anchor > p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: #252525;
+  padding-left:0px;
+}
+
+
 @media only screen and (max-width: 815px) {
   .socials{
     flex-direction: column;
@@ -441,5 +462,8 @@ footer{
     margin-bottom: 5rem;
   }
 
+  footer{
+    padding-left:20px;
+  }
 
 }
