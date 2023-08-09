@@ -450,6 +450,11 @@ footer{
   padding-left:0px;
 }
 
+.married{
+  font-size: 12px;
+  font-weight: 300;
+}
+
 
 @media only screen and (max-width: 815px) {
   .socials{
