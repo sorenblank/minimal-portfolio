@@ -39,14 +39,15 @@
     <main>
         <section class="section">
             <navbar>
-                <a href="index.html"><p class="homenav">Home</p></a>
+                <a href="index.html"><p class="homenav">~</p></a>
                 <p>/</p>
                 <a href="projects.html"><p class="projnav">Projects</p></a>
                 <p>/</p>
                 <a href="blogs.html"><p class="blognav">Blogs</p></a>
                 <p>/</p>
-                <a href="contact.html
-                "><p class="contactnav">Contact</p></a>
+                <a href="contact.html"><p class="contactnav">Contact</p></a>
+                <p>/</p>
+                <a id="myDIV" class="btn" onclick="myFunction()"><p>Dark</p></a>
             </navbar>
 
             <div class="domain">
@@ -55,7 +56,7 @@
 
                     <div class="caption">
                         <p>Right now, I'm trying to master full stack web development. I like exploring creative works and take inspiration from them to make better art ✨.</p>
-                        <p>I am also working on my own <a class="clickable" href="projects.html">projects</a>, sharing my thoughts and documenting my life on my <a class="clickable" href="blogs.html">blog</a>.</p>
+                        <p>I am also working on my own <a class="an" href="projects.html">projects</a>, sharing my thoughts and documenting my life on my <a class="an" href="blogs.html">blog</a>.</p>
                         <a href="contact.html"><button class="minimal">Get in touch →</button></a>
                     </div>
                 </header>
@@ -185,6 +186,21 @@
     <footer>
         <small>© 2023 Siyam Afroz</small>
     </footer>
+
+    <script>
+        
+        function myFunction() {
+          let element = document.body;
+          element.classList.toggle("dark");
+          var x = document.getElementById("myDIV");
+        if (x.innerHTML === "Dark") {
+          x.innerHTML = "Light";
+        } else {
+          x.innerHTML = "Dark";
+        }
+        }
+      
+    </script>
 
 </body>
 </html>
