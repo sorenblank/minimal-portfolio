@@ -14,6 +14,13 @@
   --text-line-p:#ffffff;
 
   --navbar-color:#121212;
+
+
+  --submit-bg:#121212;
+  --submit-text:#f5f5f5;
+
+  --input-bg:#ffffff;
+  --input-focus:#f3f3f3;
   }
 
 
@@ -187,11 +194,11 @@ h2{
 
 .all-blogs > a{
   text-decoration: none;
-  color: #1f1e1e;
+  color: var(--font-color);
 }
 
 .blog:hover{
-  background-color: rgb(230, 230, 230);
+  background-color: var(--input-focus);
 }
 
 .title-line > h3{
@@ -274,13 +281,17 @@ navbar > a{
 }
 
 .section-form{
-  border-top: solid 0.125rem #121212;
+  border-top: solid 0.125rem var(--navbar-color);
   background-color: var(--frame-bg-color);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom:20px;
   margin:0;
-  border-bottom: solid 0.125rem #121212;
+  border-bottom: solid 0.125rem var(--navbar-color);
+}
+
+form > p{
+  color:var(--font-color);
 }
 
 form{
@@ -301,13 +312,15 @@ form > input{
   font-family: 'Courier Prime', Courier, monospace;
   font-size: 16px;
   font-style: normal;
-
+  background-color: var(--input-bg);
 }
 
 form > input:focus{
-  background-color: #f3f3f3;
+  background-color: var(--input-focus);
   
 }
+
+
 
 form > h2, form > p{
   margin:0;
@@ -324,6 +337,11 @@ form > h2, form > p{
   font-style: normal;
   resize: none;
   height: 100px;
+  background-color: var(--input-bg);
+}
+
+.submit > textarea:focus{
+  background-color: var(--input-focus);
 }
 
 .submit > button{
@@ -334,8 +352,8 @@ form > h2, form > p{
   font-family: 'Courier Prime', Courier, monospace;
   font-size: 16px;
   font-style: normal;
-  background-color: #121212;
-  color: #f5f5f5;
+  background-color: var(--submit-bg);
+  color: var(--submit-text);
   cursor: pointer;
 }
 
@@ -427,6 +445,7 @@ footer{
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
+  color:var(--font-color);
 }
 
 .profile{
@@ -457,8 +476,6 @@ footer{
 .anchor{
   text-decoration: none;
   color: #252525;
-
-  
 }
 
 .anchor > p{
@@ -484,6 +501,12 @@ footer{
   --frame-bg-color:#242729;
   --text-line-p:#141414;
   --navbar-color:#d4d4d4;
+  --input-focus:#1e2021;
+  --input-bg:#181a1b;
+
+  --submit-bg:#d4d4d4;
+  --submit-text:#121212;
+
   font-family: 'Courier New', Courier, monospace;
 }
 
