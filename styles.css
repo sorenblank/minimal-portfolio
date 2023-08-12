@@ -533,6 +533,11 @@ footer{
 
   navbar > a > p{
     font-size: 16px;
+
+  }
+
+  navbar{
+    margin-left:-20px;
   }
 
 }
