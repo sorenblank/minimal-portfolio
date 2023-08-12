@@ -18,6 +18,8 @@
 
   --input-bg:#ffffff;
   --input-focus:#f3f3f3;
+
+  --contacts:#666666;
   }
 
 
@@ -29,6 +31,9 @@ body {
     font-weight: 400;
 }
 
+p{
+  color: var(--font-color);
+}
 
 .an{
   color:var(--font-color);
@@ -310,6 +315,7 @@ form > input{
   font-size: 16px;
   font-style: normal;
   background-color: var(--input-bg);
+  color:var(--font-color);
 }
 
 form > input:focus{
@@ -456,7 +462,7 @@ footer{
 
 .contact-section > div > a{
   text-decoration: none;
-  color: #666666;
+  color: var(--contacts);
   text-decoration: underline;
 }
 
@@ -472,7 +478,7 @@ footer{
 
 .anchor{
   text-decoration: none;
-  color: #252525;
+  color: var(--font-color);
 }
 
 .anchor > p{
@@ -480,7 +486,7 @@ footer{
   font-size: 20px;
   font-weight: 600;
   font-style: normal;
-  color: #252525;
+  color: var(--font-color);
   padding-left:0px;
 }
 
@@ -503,6 +509,8 @@ footer{
 
   --submit-bg:#d4d4d4;
   --submit-text:#121212;
+
+  --contacts:#d4d4d4;
 
   font-family: 'Courier New', Courier, monospace;
 }
