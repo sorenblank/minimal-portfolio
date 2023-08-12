@@ -531,4 +531,8 @@ footer{
     padding-left:20px;
   }
 
+  navbar > a > p{
+    font-size: 16px;
+  }
+
 }
