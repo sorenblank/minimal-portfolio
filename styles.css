@@ -341,6 +341,7 @@ form > h2, form > p{
   resize: none;
   height: 100px;
   background-color: var(--input-bg);
+  color:var(--font-color);
 }
 
 .submit > textarea:focus{
