@@ -19,7 +19,30 @@
   --input-bg:#ffffff;
   --input-focus:#f3f3f3;
 
+  --blog-hover: #dfdfdf;
+
   --contacts:#666666;
+  }
+
+.dark{
+    --background-color: #191919;
+    --font-color: #d4d4d4;
+    --accent-color: #dddad5;
+    --white:#252525;
+    --frame-bg-color:#242729;
+    --text-line-p:#141414;
+    --navbar-color:#d4d4d4;
+    --input-focus:#1e2021;
+    --input-bg:#181a1b;
+
+    --blog-hover: #1e2021;
+  
+    --submit-bg:#d4d4d4;
+    --submit-text:#121212;
+  
+    --contacts:#d4d4d4;
+  
+    font-family: 'Courier New', Courier, monospace;
   }
 
 
@@ -200,7 +223,7 @@ h2{
 }
 
 .blog:hover{
-  background-color: #e9e9e9;
+  background-color: var(--blog-hover);
 }
 
 .title-line > h3{
@@ -507,24 +530,6 @@ footer{
 
 
 
-.dark{
-  --background-color: #191919;
-  --font-color: #d4d4d4;
-  --accent-color: #dddad5;
-  --white:#252525;
-  --frame-bg-color:#242729;
-  --text-line-p:#141414;
-  --navbar-color:#d4d4d4;
-  --input-focus:#1e2021;
-  --input-bg:#181a1b;
-
-  --submit-bg:#d4d4d4;
-  --submit-text:#121212;
-
-  --contacts:#d4d4d4;
-
-  font-family: 'Courier New', Courier, monospace;
-}
 
 
 @media only screen and (max-width: 815px) {
