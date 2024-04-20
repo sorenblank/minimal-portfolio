@@ -200,7 +200,7 @@ h2{
 }
 
 .blog:hover{
-  background-color: var(--input-focus);
+  background-color: #e9e9e9;
 }
 
 .title-line > h3{
@@ -253,8 +253,22 @@ h2{
 }
 
 .all-frames > a:hover{
-  animation:shadow-pop-bottom-right 0.1s linear both} @keyframes shadow-pop-bottom-right{0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:1px 1px #3e3e3e,2px 2px #3e3e3e,3px 3px #3e3e3e,4px 4px #3e3e3e,5px 5px #3e3e3e;transform:translateX(-5px) translateY(-5px)}
+  animation:shadow-pop-bottom-right 0.1s ease both;
+  transform:translateX(-5px) translateY(-5px);
+
 }
+  
+@keyframes shadow-pop-bottom-right {
+  0% {
+    box-shadow: 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e;
+    transform: translateX(-5px) translateY(-5px);
+  }
+}
+
 
 .blog {
   display: flex;
